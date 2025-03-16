@@ -4,12 +4,13 @@ class Program
 {
     static void Main(string[] args)
     {
-        // Membuat instance dari HaloGeneric dengan tipe data string
-        HaloGeneric<string> halo = new HaloGeneric<string>();
+        // Membuat instance dari DataGeneric dengan tipe data string (gunakan NIM sebagai data)
+        DataGeneric<string> dataGeneric = new DataGeneric<string>("103022300134");
 
-        // Memanggil method SapaUser dengan input nama user
-        halo.SapaUser("Praktikan");
+        // Memanggil method PrintData untuk mencetak data
+        dataGeneric.PrintData();
 
-        Console.ReadLine();
+        Console.ReadLine(); // Agar console tidak langsung tertutup
     }
 }
+
